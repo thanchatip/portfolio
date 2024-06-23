@@ -1,5 +1,6 @@
 <template>
   <div class="app-layout">
+    <!-- <CustomCursor /> -->
     <div class="app-content-body">
       <slot />
     </div>
@@ -7,63 +8,17 @@
 </template>
 
 <script lang="ts" setup>
-import { ref } from 'vue';
-
-const items = ref([
-  {
-    label: 'Home',
-    icon: 'pi pi-home',
-  },
-  {
-    label: 'Features',
-    icon: 'pi pi-star',
-  },
-  {
-    label: 'Projects',
-    icon: 'pi pi-search',
-    items: [
-      {
-        label: 'Components',
-        icon: 'pi pi-bolt',
-      },
-      {
-        label: 'Blocks',
-        icon: 'pi pi-server',
-      },
-      {
-        label: 'UI Kit',
-        icon: 'pi pi-pencil',
-      },
-      {
-        label: 'Templates',
-        icon: 'pi pi-palette',
-        items: [
-          {
-            label: 'Apollo',
-            icon: 'pi pi-palette',
-          },
-          {
-            label: 'Ultima',
-            icon: 'pi pi-palette',
-          },
-        ],
-      },
-    ],
-  },
-  {
-    label: 'Contact',
-    icon: 'pi pi-envelope',
-  },
-]);
+import CustomCursor from "../components/CustomCursor.vue";
 </script>
 
 <style lang="scss" scoped>
 .app-layout {
-  height: 100vh;
-  // background: #58a0ff;
+  // height: 100vh;
+  //background: rgba(237, 232, 228, 1);
+  //background: #e8e8e8;
 }
 
 .app-content-body {
-  background: #ccc2;
+  margin: 10px;
 }
 </style>

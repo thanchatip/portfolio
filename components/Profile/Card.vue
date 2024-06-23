@@ -19,19 +19,20 @@
 <script lang="ts" setup></script>
 
 <style lang="scss" scoped>
-@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap");
 
 .profile-card {
-  margin: 20px;
+  //margin: 20px;
   //background: #f8efff;
-  font-family: 'IBM Plex Sans', sans-serif;
+  border: 1px solid black;
+  font-family: "Cabin", sans-serif;
 }
 
 .title {
-  color: #52057b;
+  color: #754af6;
 }
 
 .content {
-  color: #bc6ff1;
+  //color: #bc6ff1;
 }
 </style>
